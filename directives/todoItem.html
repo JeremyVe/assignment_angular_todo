@@ -1,0 +1,5 @@
+<td><input type='checkbox', ng-model='item.completed'></td>
+<td>{{ item.text }}</td>
+<td>{{ item.dueDate | date: 'MMM d, yyyy' }}</td>
+<td>{{ item.completed === false ? "Not completed. One day, this will be a Checkbox" : "Done" }}</td>
+<td ng-click='deleteTodo($index)'><i class='glyphicon glyphicon-remove'></i></td>
